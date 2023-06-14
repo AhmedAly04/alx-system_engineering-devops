@@ -1,2 +1,2 @@
 #!/bin/bash
-file $(ls /usr/bin/* | grep bin/zip)
+echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
